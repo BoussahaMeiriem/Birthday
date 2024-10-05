@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raihan's Birthday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: cursive, sans-serif;
+            background: url('bday.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+            margin: 20px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+            padding: 20px;
+            border: 5px solid rgb(129, 191, 199); 
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .profile-pic {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #c75e81;
+        }
+        h1 {
+            color: #333333; 
+            margin: 10px 0; 
+            border-bottom: 2px solid #c75e81; 
+            padding-bottom: 5px; 
+        }
+        button {
+            padding: 15px 30px; 
+            font-family: cursive, sans-serif;
+            font-size: 18px; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgb(129, 191, 199);
+            color: white;
+            margin: 0 10px; 
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Shadow for button */
+        }
+        button:hover {
+            background-color: #c75e81; 
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container" id="welcomeContainer">
+    <h1><i class="far fa-heart"></i>  Welcome Raihan  <i class="far fa-heart"></i></h1>
+    <p>Click the button down there</p>
+    <button id="testButton">Click Me!</button>
+</div>
+
+<script>
+    document.getElementById('testButton').addEventListener('click', function() {
+        document.getElementById('welcomeContainer').innerHTML = `
+            <h1><i class="far fa-heart"></i>  HAPPY BIRTHDAY QUEEN  <i class="far fa-heart"></i></h1>
+    <img src="raihanpic.jpg" alt="Profile Picture" class="profile-pic">
+    <section>
+        <h2>Birthday Wish From MERY</h2>
+        <p>Wishing u a life filled with smiles and sweet surprises. Enjoy ur special day!</p>
+    </section>
+        `;});
+</script>
+
+</body>
+</html>
